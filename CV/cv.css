@@ -1,0 +1,63 @@
+*{
+box-sizing: border-box;
+}
+.About{
+   background-color: lightgray;
+    float: left;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    width: 25%;
+}
+.Resume{
+   background-color: lightgray;
+    float: left;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    width: 25%;
+}
+.Projects{
+   background-color: lightgray;
+    float: left;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    width: 25%;
+
+}
+.Contact{
+   background-color:lightgray;
+    float: left;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    width: 25%;
+
+}
+.aboutMe{
+   background-color: #f5dbc7;
+    float: left;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    width: 100%;
+}
+.resume{
+   background-color: #f7c3ed;
+    float: left;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    width: 50%;
+}
+.projects{
+   background-color: #a0f7cb;
+    float: left;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    width: 50%;
+
+}
+.contact{
+   background-color: #c4d9f5;
+    float: left;
+    padding: 20px;
+    border: 2px solid aliceblue;
+    width: 100%;
+
+}
