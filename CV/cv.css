@@ -1,12 +1,15 @@
 *{
 box-sizing: border-box;
 }
+
+
 .About{
    background-color: lightgray;
     float: left;
     padding: 20px;
     border: 2px solid aliceblue;
     width: 25%;
+    height: 10%;
 }
 .Resume{
    background-color: lightgray;
@@ -14,6 +17,8 @@ box-sizing: border-box;
     padding: 20px;
     border: 2px solid aliceblue;
     width: 25%;
+    height: 10%;
+
 }
 .Projects{
    background-color: lightgray;
@@ -21,6 +26,8 @@ box-sizing: border-box;
     padding: 20px;
     border: 2px solid aliceblue;
     width: 25%;
+    height: 10%;
+
 
 }
 .Contact{
@@ -29,6 +36,7 @@ box-sizing: border-box;
     padding: 20px;
     border: 2px solid aliceblue;
     width: 25%;
+    height: 10%;
 
 }
 .aboutMe{
@@ -37,6 +45,8 @@ box-sizing: border-box;
     padding: 20px;
     border: 2px solid aliceblue;
     width: 100%;
+    height: 40%;
+
 }
 .resume{
    background-color: #f7c3ed;
@@ -44,13 +54,17 @@ box-sizing: border-box;
     padding: 20px;
     border: 2px solid aliceblue;
     width: 50%;
+    height: 40%;
+
 }
-.projects{
+.Skills{
    background-color: #a0f7cb;
     float: left;
     padding: 20px;
     border: 2px solid aliceblue;
     width: 50%;
+    height: 40%;
+
 
 }
 .contact{
@@ -59,5 +73,7 @@ box-sizing: border-box;
     padding: 20px;
     border: 2px solid aliceblue;
     width: 100%;
+    height: 10%;
+
 
 }
