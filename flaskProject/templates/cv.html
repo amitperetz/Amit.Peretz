@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>cv</title>
+    <link rel="stylesheet" href="{{ "/static/ccs/cv.css" }}">
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <script src="{{ url_for('static', filename='js/cv.js') }}"></script>
+</head>
+<body>
+   <div class="all">
+    <div style="text-align: center; font-family:Calibri "/>
+    <div calss="row">
+    <div class="About">aboutMe</div>
+    <div class="Resume">resume</div>
+    <div class="Projects">projects</div>
+    <div class="Contact">contact</div>
+    </div>
+       <div class="aboutMe"><h2>ABOUT ME</h2>
+           <p id="movingText"><script> MovingTXT() </script></p>
+    My name is Amit Peretz. I'm glad you made it to my resume page.
+           <br>You can scroll through the different blocks and get to know me.<br>In the last block you can contact me<br>
+    <img onMouseMove="bigImg(this)" onMouseOut="normalImg(this)" border="0" src="{{ url_for('static', filename='images/Me.png' )}}" alt="Me" width="92"
+         height="110">
+
+        <script>
+            function bigImg(x) {
+            x.style.height = "130px";
+            x.style.width = "112px";
+        }
+            function normalImg(x) {
+            x.style.height = "110px";
+            x.style.width = "92px";
+        }
+</script>
+           <br>
+           <a href="url">https://www.linkedin.com/in/amit-peretz-361381202/</a>
+                           <ul>
+
+<a href="{{ url_for('assignment8_fun') }}">Assignment8</a>
+       <br>
+                           </ul>
+           {%  block Hobbies %}
+           {% endblock %}
+<br>
+
+    <div calss="row">
+    <div class="resume">
+        <div style="text-align: center;"><h1>RESUME</h1>
+            <h2>EDUCATION</h2>
+        Industrial Engineering and Management<br>
+3rd year Student, Ben-Gurion University of the Negev.<br>
+           <h2>MILITARY SERVICE</h2>
+            10/12-12/16<br>
+Operational Officer - Manager of a war room in the Israeli Navy corps.
+Guidance and accompaniment- Took care professionally and personally of over than 100 soldiers.
+Currently serving in the IDF reserve as a in routine and emergency.
+
+        </div>
+        </div>
+    <div class="Skills">
+        <div style="text-align: center;"><img src="{{ "/static/images/Skills.png" }}" alt="Resume" width="580px"></div><br>
+</div>
+    </div>
+    <div class="contact">contact
+       <form>
+    <label>
+        Name:
+    </label>
+    <input type="text">
+    <br>
+        <label>
+        Email:
+    </label>
+    <input type="email">
+    <br>
+        <label>
+        comment:
+    </label>
+    <input type="text">
+    <br>
+</form>
+        <form method="get" action="contactList.html">
+    <button type="submit">SEND</button>
+</form>
+
+        </div>
+    </div>
+</div>
+</body>
+</html>

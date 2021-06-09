@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My hobbies page</title>
+    <link rel="stylesheet" href="{{ "/static/ccs/cv.css" }}"></head>
+<body>
+{% extends "cv.html" %}
+      {% block Hobbies %}
+          {% if user %}
+<h4 class="{% if user.gender =='girl' %} female {% else %} male {% endif %}">  {{ user.name| upper }} HOBBIES <br>
+      {% for hobby in hobbies %}
+          <li>{{ hobby | lower }}</li>
+          {% endfor %}
+
+</h4>
+          {% endif %}
+{% endblock %}
+</body>
+</html>

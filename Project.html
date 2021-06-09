@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEB-Project</title>
+</head>
+<div class="column">
+ <div style="text-align: center;">
+<img id="image" src="Capture3.PNG" style="width:1000px">
+
+<script>
+
+var imageSources = ["Capture1.PNG","Capture2.PNG", "Capture3.PNG"]
+
+var index = 0;
+setInterval (function(){
+  if (index === imageSources.length) {
+    index = 0;
+  }
+  document.getElementById("image").src = imageSources[index];
+  index++;
+} , 3000);
+
+
+
+</script>
+</div>
+</div>
+
+<hr>
+<br>
+</div>
+<br>
+<br>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+    <head>
+        <title> Sign up/Login</title>
+        <link rel="stylesheet" href="Login.css">
+    </head>
+    <body>
+    <form action="" id="resignation1" method="post" onsubmit="return ValidateForm(this)">
+        <div class="login">
+            <div class="login-html">
+              <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Log In</label>
+              <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+              <div class="login-form">
+                <div class="sign-in-htm">
+                  <div class="group">
+                    <label for="user" class="label">Email</label>
+                    <input id="user" type="text" class="input" required>
+                  </div>
+                  <div class="group">
+                    <label for="pass" class="label">Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                  </div>
+                  <div class="group">
+                    <input type="submit" class="button" value="Log In" name="submit1">
+                  </div>
+                  <div class="hr"></div>
+                </div>
+                  <form/>
+                  <form action="" id="resignation2" method="post" onsubmit="return ValidateForm(this)">
+                <div class="sign-up-htm">
+                  <div class="group">
+                    <label for="email" class="label">Email</label>
+                    <input id="email" type="email" class="input" name="mail">
+                  </div>
+                  <div class="group">
+                    <label for="pass" class="label">Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                  </div>
+                  <div class="group">
+                    <label for="pass" class="label">Repeat Password</label>
+                    <input id="pass" type="password" class="input" data-type="password">
+                  </div>
+                  <div class="group">
+                    <label for="phone" class="label">Phone Number</label>
+                    <input id="phone" type="tel" class="input" name="phoneNum">
+                  </div>
+                  <div class="group">
+                    <input type="submit" class="button" value="Sign Up" name="submit2">
+                  </div>
+                  <div class="hr"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </form>
+        <script src="CheckDetails.js"></script>
+        </body>
+</html>
