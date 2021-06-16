@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request, session, redirect, url_for, blueprints
+from flask import Flask, render_template, redirect, session
+from flask import url_for, request, blueprints
 
 
 app = Flask(__name__)
@@ -7,6 +8,7 @@ app.secret_key = '123'
 
 from pages.assignment10.assignment10 import assignment10
 app.register_blueprint(assignment10)
+
 
 @app.route('/')
 def home_page():
@@ -60,6 +62,11 @@ def logout():
 
 @app.route('/assignment10', methods=['GET', 'POST', 'DELETE', 'PUT'])
 def assignment10_fun():
+    return render_template('assignment10.html')
+
+
+@app.route('/assignment11', methods=['GET', 'POST', 'DELETE', 'PUT'])
+def assignment11_fun():
     return render_template('assignment10.html')
 
 
